@@ -34,6 +34,8 @@ def music_translate(in_w):
         else:
             if note_w[0]=="-":
                 note_in=","
+            elif note_w[0]=="0" or note_w[1]=="0":
+                note_in="0"
             else:
                 note_in[0]="'"
             note_in+=str(notes_swara[(note_w[1])])
